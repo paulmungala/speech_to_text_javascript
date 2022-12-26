@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Speech to Text</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Speech To Text</h1>
+        <div>
+            <label for="lang">
+                Choose your language:
+                <select name="lang" id="lang">
+                    <option value="en-GB" id="en-GB" selected="selected">English - GB</option>
+                    <option value="en-US" id="en-US">English - US</option>
+                    <option value="es-ES" id="es-ES">Español - ES</option>
+                    <option value="de-DE" id="de-DE">Deutsch - DE</option>
+                    <option value="de-CH" id="de-CH">Deutsch - CH</option>
+                    <option value="fr-FR" id="fr-FR">French - FR</option>
+                    <option value="pt-PT" id="pt-PT">Português - PT</option>
+                    <option value="pt-BR" id="pt-PT">Português - BR</option>
+                    <option value="el-GR" id="el-GR">Ελληνικά - GR</option>
+                    <option value="tr-TR" id="tr-TR">Türk - TK</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <button id="start" title="record"></button>
+        </div>
+        <span id="tooltip" class="init"></span>
+
+        <div id="transcription" title="copy">
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
